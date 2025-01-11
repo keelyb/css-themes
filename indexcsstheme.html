@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements Example</title>
+    <!-- Add jQuery and jQuery UI CSS/JS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <!-- CSS files -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <!-- JQuery files -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+    <!-- script files -->
+    <script src="./csstheme.js"></script>
+    <script src="./datepicker.js"></script>
+</head>
+
+<body>
+    <!-- Theme toggle button with correct classes -->
+    <button class="theme-toggle" id="theme-toggle">
+        <span class="light-mode">🌞</span>
+        <span class="dark-mode" style="display: none;">🌙</span>
+    </button>
+
+
+    <div class="container">
+        <h1>Form Elements Example</h1>
+        <form action="/submit" method="post">
+            <!-- Date Picker -->
+
+
+            <div class="form-group">
+                <label for="datepicker">Select Date:</label>
+                <input type="text" id="datepicker" name="datepicker" class="datepicker"
+                    placeholder="Click to select date">
+            </div>
+
+
+            <!-- Existing form elements -->
+
+            <!-- ... rest of your existing form code ... -->
+            <!-- Text inputs -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <!-- Radio buttons -->
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+
+            <!-- Select dropdown -->
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select a country</option>
+                    <option value="usa">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                </select>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="form-group">
+                <label>Interests:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="coding" name="interests" value="coding">
+                    <label for="coding">Coding</label>
+                    <input type="checkbox" id="reading" name="interests" value="reading">
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="traveling" name="interests" value="traveling">
+                    <label for="traveling">Traveling</label>
+                </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+
+            <!-- Range slider -->
+            <div class="form-group">
+                <label for="rating">Rating (1-10):</label>
+                <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+            </div>
+
+
+            <!-- Add this before the button-group div -->
+            <div class="form-group">
+                <label for="submit-input">Submit Input:</label>
+                <input type="submit" id="submit-input" name="submit-input" value="Submit Form" class="btn primary">
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="button-group">
+                <button type="submit" class="btn primary">Submit</button>
+                <button type="reset" class="btn secondary">Reset</button>
+            </div>
+
+            <!-- Add this section after your form or wherever you want the table to appear -->
+            <div class="table-container">
+                <h2>Employee Directory</h2>
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Position</th>
+                            <th>Start Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>John Smith</td>
+                            <td>Engineering</td>
+                            <td>Senior Developer</td>
+                            <td>01/15/2022</td>
+                            <td><span class="status-badge active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Sarah Johnson</td>
+                            <td>Marketing</td>
+                            <td>Marketing Manager</td>
+                            <td>03/22/2022</td>
+                            <td><span class="status-badge active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>Michael Brown</td>
+                            <td>Finance</td>
+                            <td>Financial Analyst</td>
+                            <td>06/10/2022</td>
+                            <td><span class="status-badge inactive">Inactive</span></td>
+                        </tr>
+                        <tr>
+                            <td>004</td>
+                            <td>Emily Davis</td>
+                            <td>HR</td>
+                            <td>HR Manager</td>
+                            <td>09/01/2022</td>
+                            <td><span class="status-badge active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>005</td>
+                            <td>Robert Wilson</td>
+                            <td>Engineering</td>
+                            <td>Junior Developer</td>
+                            <td>11/15/2022</td>
+                            <td><span class="status-badge pending">Pending</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </form>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <h1>Form Elements Example</h1>
+        <form action="/submit" method="post">
+
+        </form>
+    </div>
+</body>
+
+</html>

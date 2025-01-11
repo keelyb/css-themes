@@ -1,0 +1,86 @@
+:root {
+    /* Light theme */
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --border-color: #dddddd;
+    --input-background: #f5f5f5;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+    /* Dark theme */
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --border-color: #555555;
+    --input-background: #444444;
+    --primary-color: #0d6efd;
+    --secondary-color: #adb5bd;
+    --success-color: #198754;
+    --error-color: #dc3545;
+    --shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Apply theme to elements */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background: var(--background-color);
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Example usage */
+.datepicker {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.input {
+    background-color: var(--input-background);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+/* Datepicker theme styles */
+.ui-datepicker {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.ui-datepicker-header {
+    background-color: var(--input-background);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.ui-datepicker th {
+    color: var(--text-color);
+}
+
+.ui-datepicker td a {
+    color: var(--text-color);
+}
